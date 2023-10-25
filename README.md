@@ -1,4 +1,8 @@
 # Notes System Website
+
+https://github.com/katrenmikhael/Notes-System/assets/61967210/5052a12b-3842-49b7-b5c3-c8ff4fd9c975
+
+
 ## Overview
 This GitHub repository hosts the source code for a web application that allows users to create, edit, and delete notes. The system is built with a combination of frontend technologies such as HTML, CSS, Bootstrap, and JavaScript, while the backend is powered by PHP and an API. MySQL serves as the database to store and manage user notes.
 ## Features
