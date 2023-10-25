@@ -1,0 +1,10 @@
+*{
+    text-decoration: none;
+    color: inherit; 
+}
+.nav-link:hover{
+    padding: 5px;
+    background:#FFF;
+    color:black;
+    border-radius: 5px;;
+}

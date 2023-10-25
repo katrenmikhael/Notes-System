@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body class="bg-light">
+    <!-- ===============navbar========================  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg p-3">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><i class="fa-solid fa-note-sticky fa-solid fa-note-sticky fs-3"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link me-3" id="logOut" href="../login.html"
+                >LogOut</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ===================Home Body=======================  -->
+    <div class="add-btn">
+      <!-- Button trigger modal -->
+      <button
+        class="btn btn-outline-success px-3 my-3 mx-3"
+        data-bs-toggle="modal"
+        type="button"
+        data-bs-target="#exampleModal"
+      >
+        Add Note
+      </button>
+
+      <!-- add note Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Add Note</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="addNote-form" id="addNoteForm">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="note"
+                    class="form-control"
+                    id="note"
+                    placeholder="Note Text"
+                  />
+                  <label for="note">Note Text</label>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" id="addNote" class="btn btn-success">
+                    Add Note
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home mt-5">
+      <div class="container">
+        <div class="row" id="notesContainer"></div>
+      </div>
+    </div>
+    <!----===========================edit model======================== -->
+    <div class="edit">
+      <!-- edit note Modal -->
+      <div
+        class="modal fade"
+        id="editNoteModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Note</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="addNote-form" id="addNoteForm">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="editedNote"
+                    class="form-control"
+                    id="editedNote"
+                    placeholder="Note Text"
+                  />
+                  <label for="note">New Text</label>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" id="editNote" class="btn btn-primary">
+                    Edit Note
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----===========================Delete Model======================== -->
+    <div class="Delete">
+      <!-- edit note Modal -->
+      <div
+        class="modal fade"
+        id="deleteNoteModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Delete Note
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="addNote-form" id="addNoteForm">
+                <h6>You Are Sure Delete This Note</h6>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="submit" id="deleteNote" class="btn btn-danger">
+                    Delete Note
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/home.js"></script>
+  </body>
+</html>
